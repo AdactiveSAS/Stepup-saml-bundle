@@ -195,4 +195,11 @@ final class ReceivedAuthnRequest
         $this->request->setRequesterID($requesterIds);
         $this->request->setProxyCount($proxyCount);
     }
+
+    /**
+     * @return NULL|string
+     */
+    public function getAssertionConsumerServiceURL(){
+        return $this->request->getAssertionConsumerServiceURL();
+    }
 }
